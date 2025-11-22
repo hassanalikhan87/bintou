@@ -92,32 +92,46 @@
     "shop_by_collection": {
       "type": "collection-list",
       "blocks": {
+        "featured_collection_iEjHxz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "earings"
+          }
+        },
+        "featured_collection_Jgzafk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "earings"
+          }
+        },
         "collection_1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "earings"
           }
         },
         "collection_2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "earings"
           }
         },
         "collection_3": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "earings"
           }
         },
         "collection_4": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "earings"
           }
         }
       },
       "block_order": [
+        "featured_collection_iEjHxz",
+        "featured_collection_Jgzafk",
         "collection_1",
         "collection_2",
         "collection_3",
