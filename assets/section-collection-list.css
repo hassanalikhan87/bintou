@@ -212,3 +212,16 @@
 .collection-list .card__media img {
   object-fit: cover !important;
 }
+
+/* Force 2 columns on tablet */
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .section-collection-list .slider--tablet .slider__slide {
+    width: calc(50% - var(--grid-desktop-horizontal-spacing)) !important;
+    max-width: calc(50% - var(--grid-desktop-horizontal-spacing)) !important;
+  }
+}
+
+/* Fix alignment on large screens (>1200px) */
+.section-collection-list slider-component {
+  --desktop-margin-left-first-item: 0px !important;
+}

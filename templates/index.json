@@ -130,7 +130,7 @@
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "show_view_all": true,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 60,
         "padding_bottom": 60
