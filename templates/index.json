@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_carousel": {
@@ -6,6 +15,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
+            "image_overlay_opacity": 40,
             "heading": "Adorn Yourself",
             "heading_size": "h1",
             "subheading": "Discover our latest collection of precious jewelry.",
@@ -13,41 +23,39 @@
             "link": "shopify://collections/all",
             "button_label_2": "View Collection",
             "link_2": "shopify://collections/all",
-            "box_align": "middle-center",
             "show_text_box": true,
+            "box_align": "middle-center",
             "text_alignment": "left",
-            "image_overlay_opacity": 40,
             "color_scheme": "scheme-1"
           }
         },
         "slide_2": {
           "type": "slide",
           "settings": {
+            "image_overlay_opacity": 40,
             "heading": "Timeless Elegance",
             "heading_size": "h1",
             "subheading": "Crafted with care, designed for you.",
             "button_label": "View Collection",
             "link": "shopify://collections/all",
-            "box_align": "middle-center",
             "show_text_box": true,
+            "box_align": "middle-center",
             "text_alignment": "left",
-            "image_overlay_opacity": 40,
             "color_scheme": "scheme-1"
           }
         },
         "slide_3": {
           "type": "slide",
           "settings": {
+            "image_overlay_opacity": 40,
             "heading": "Artistry in Detail",
             "heading_size": "h1",
             "subheading": "Every piece tells a story of beauty and grace.",
             "button_label": "Discover More",
             "link": "shopify://collections/all",
-            "box_align": "middle-center",
             "show_text_box": true,
+            "box_align": "middle-center",
             "text_alignment": "left",
-            "image_2": "shopify:\/\/shop_images\/hero-slide-2.jpg",
-            "image_overlay_opacity": 40,
             "color_scheme": "scheme-1"
           }
         }
@@ -129,7 +137,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         }
       },
@@ -147,19 +155,19 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
         "collection": "all",
         "products_to_show": 8,
+        "title": "Featured products",
+        "heading_size": "h2",
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
       }
@@ -206,8 +214,8 @@
       "type": "video",
       "settings": {
         "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "heading_size": "h1",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-1",
@@ -222,7 +230,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -231,7 +239,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -240,7 +248,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -256,14 +264,14 @@
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
