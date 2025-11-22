@@ -202,3 +202,13 @@
 .section-collection-list .collection-list-title {
   color: #a9723e !important; /* Saffron */
 }
+
+/* Force 60vh height for collection tiles */
+.collection-list .card__inner {
+  height: 60vh !important;
+  padding-bottom: 0 !important; /* Remove aspect ratio padding */
+}
+
+.collection-list .card__media img {
+  object-fit: cover !important;
+}
