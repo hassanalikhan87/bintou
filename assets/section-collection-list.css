@@ -225,3 +225,9 @@
 .section-collection-list slider-component {
   --desktop-margin-left-first-item: 0px !important;
 }
+
+/* Remove ::after pseudo-element from slider to prevent extra spacing */
+.section-collection-list .slider:after {
+  content: none !important;
+  display: none !important;
+}
