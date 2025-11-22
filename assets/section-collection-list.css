@@ -175,3 +175,30 @@
   transform: scale(1.05);
   transition: transform 0.5s ease;
 }
+
+/* Full Height and Centering */
+.section-collection-list .collection-list-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Wider Container */
+.section-collection-list .page-width {
+  max-width: 1600px !important;
+}
+
+/* Ensure grid takes full width */
+.section-collection-list .collection-list {
+  width: 100%;
+}
+
+/* Custom Colors */
+.section-collection-list > div {
+  background-color: #035851 !important; /* Ivory Dust */
+}
+
+.section-collection-list .collection-list-title {
+  color: #a9723e !important; /* Saffron */
+}
