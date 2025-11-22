@@ -69,6 +69,53 @@
         "accessibility_info": "Slideshow about our latest collections"
       }
     },
+    "shop_by_collection": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_1",
+        "collection_2",
+        "collection_3",
+        "collection_4"
+      ],
+      "settings": {
+        "title": "Shop by Collection",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -224,6 +271,7 @@
   },
   "order": [
     "hero_carousel",
+    "shop_by_collection",
     "rich_text",
     "featured_collection",
     "collage",
