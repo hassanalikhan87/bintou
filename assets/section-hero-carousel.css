@@ -442,6 +442,13 @@ slideshow-component:not(.page-width) .slider-buttons {
   .hero-carousel:not(.hero-carousel--split) .banner__heading {
     font-size: 3.6rem;
   }
+
+  /* Override Dawn theme's mobile overlay hiding for hero carousel */
+  /* This ensures the CMS-controlled overlay works on mobile */
+  .hero-carousel.banner--mobile-bottom .banner__media::after,
+  .hero-carousel .banner__media::after {
+    display: block !important;
+  }
 }
 
 /* Full Screen Height */
@@ -558,7 +565,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 .hero-carousel .slider-counter__link .dot {
-  background-color: rgba(249, 242, 232, 0.3) !important; /* Dimmed Ivory Dust for inactive */
+  background-color: #b2b6b7; /* Dimmed Ivory Dust for inactive */
   border: none;
   width: 4rem; /* Wide bar */
   height: 0.3rem; /* Thin height */
