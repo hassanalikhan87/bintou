@@ -209,10 +209,48 @@
   background-color: #a9723e !important; /* Ivory Dust */
 }
 
+.section-collection-list .title-wrapper-with-link {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
 .section-collection-list .collection-list-title {
   color: #f9f2e8 !important; /* Saffron */
+  margin: 0;
+  line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  font-size: 6rem !important; /* Match Hero Desktop */
+  font-weight: 500;
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 749px) {
+  .section-collection-list .collection-list-title {
+    font-size: 3.6rem !important; /* Match Hero Mobile */
+  }
+
+  .header-view-all {
+    padding: 1.5rem 2rem !important;
+    font-size: 1.4rem !important;
+    min-width: auto !important;
+    width: 100%; /* Full width on mobile like hero buttons often are? Or just smaller? */
+  }
+
+  .section-collection-list .title-wrapper-with-link {
+    margin-bottom: 2rem;
+    flex-direction: column; /* Stack on mobile */
+    align-items: center; /* Center align items */
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .section-collection-list .collection-list-title {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 /* Force 60vh height for collection tiles */
