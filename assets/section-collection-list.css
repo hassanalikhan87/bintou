@@ -84,10 +84,18 @@
 }
 
 .header-view-all:hover {
-  background-color: #a9723e !important;
+  background-color: transparent !important;
   border-color: #f9f2e8 !important;
   color: #f9f2e8 !important;
   transform: scale(1.02);
+}
+
+/* Remove pseudo-elements from View All button */
+.header-view-all::before,
+.header-view-all::after {
+  content: none !important;
+  display: none !important;
+  box-shadow: none !important;
 }
 
 .header-view-all .icon-wrap {
