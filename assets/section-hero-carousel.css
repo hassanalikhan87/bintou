@@ -210,13 +210,18 @@ slideshow-component:not(.page-width) .slider-buttons {
   position: relative;
   width: 100%;
   height: calc(100vh - var(--header-height, 0px));
-  height: calc(100dvh - var(--header-height, 0px));
   min-height: calc(100vh - var(--header-height, 0px));
-  min-height: calc(100dvh - var(--header-height, 0px));
   overflow: hidden;
   z-index: 1;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/* Prevent overlap on mobile */
+@media screen and (max-width: 749px) {
+  .hero-carousel:not(.hero-carousel--split) .slideshow__text {
+    padding-bottom: 8rem !important; /* Space for controls */
+  }
 }
 
 .hero-carousel .slideshow {
