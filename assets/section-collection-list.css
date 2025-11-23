@@ -196,11 +196,13 @@
 
 /* Custom Colors */
 .section-collection-list > div {
-  background-color: #035851 !important; /* Ivory Dust */
+  background-color: #ffffff !important; /* Ivory Dust */
 }
 
 .section-collection-list .collection-list-title {
   color: #a9723e !important; /* Saffron */
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 /* Force 60vh height for collection tiles */
