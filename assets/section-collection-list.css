@@ -243,3 +243,32 @@
   content: none !important;
   display: none !important;
 }
+
+/* Pagination Styling (Bintou Theme) */
+.section-collection-list .slider-buttons {
+  margin-top: 3rem;
+}
+
+.section-collection-list .slider-button {
+  color: #f9f2e8 !important; /* Dark Green */
+  background: transparent !important;
+  border: 1px solid #f9f2e8 !important;
+  border-radius: 0 !important;
+  width: 4.4rem;
+  height: 4.4rem;
+  transition: all 0.3s ease;
+}
+
+.section-collection-list .slider-button:hover {
+  background-color: #f9f2e8 !important;
+  color: #a9723e !important; /* Ivory */
+}
+
+.section-collection-list .slider-button .icon {
+  height: 1.2rem;
+}
+
+.section-collection-list .slider-counter {
+  color: #f9f2e8 !important;
+  font-weight: 500;
+}
