@@ -126,13 +126,13 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "color_scheme": "scheme-1"
+          "color_scheme": "scheme-151e9042-4a19-4758-8e00-385dc9914bf4"
         }
       },
       "main-password-footer": {
         "type": "main-password-footer",
         "settings": {
-          "color_scheme": "scheme-1"
+          "color_scheme": "scheme-151e9042-4a19-4758-8e00-385dc9914bf4"
         }
       }
     },
@@ -191,6 +191,28 @@
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
+        }
+      },
+      "scheme-64fdf380-c034-4205-9d0d-b3db7a5eec77": {
+        "settings": {
+          "background": "#f9f2e8",
+          "background_gradient": "",
+          "text": "#a9723e",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-151e9042-4a19-4758-8e00-385dc9914bf4": {
+        "settings": {
+          "background": "#f9f2e8",
+          "background_gradient": "",
+          "text": "#a9723e",
+          "button": "#a9723e",
+          "button_label": "#f9f2e8",
+          "secondary_button_label": "#a9723e",
+          "shadow": "#ffffff"
         }
       }
     }
