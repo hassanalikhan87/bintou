@@ -209,11 +209,12 @@ slideshow-component:not(.page-width) .slider-buttons {
 .hero-carousel {
   position: relative;
   width: 100%;
+  max-width: 1600px;
   height: calc(100vh - var(--header-height, 0px));
   min-height: calc(100vh - var(--header-height, 0px));
   overflow: hidden;
   z-index: 1;
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 0 !important;
 }
 
