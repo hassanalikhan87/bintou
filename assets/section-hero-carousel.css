@@ -600,10 +600,12 @@ slideshow-component:not(.page-width) .slider-buttons {
   .hero-carousel .slider-counter {
     position: absolute;
     bottom: 2rem;
-    left: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
     pointer-events: auto;
     margin-right: 0;
     order: unset;
+    width: max-content;
   }
 
   /* Buttons centered vertically */
