@@ -588,7 +588,51 @@ slideshow-component:not(.page-width) .slider-buttons {
 /* Mobile Adjustments for Controls */
 @media screen and (max-width: 749px) {
   .hero-carousel .slideshow__controls {
-    padding: 0 2rem;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    pointer-events: none;
+    align-items: flex-end; /* Keep dots at bottom */
+  }
+
+  /* Dots at bottom left */
+  .hero-carousel .slider-counter {
+    position: absolute;
     bottom: 2rem;
+    left: 2rem;
+    pointer-events: auto;
+    margin-right: 0;
+    order: unset;
+  }
+
+  /* Buttons centered vertically */
+  .hero-carousel .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: auto;
+    z-index: 4;
+    order: unset;
+  }
+
+  .hero-carousel .slider-button--prev {
+    left: 1rem;
+    right: auto;
+  }
+
+  .hero-carousel .slider-button--next {
+    right: 1rem;
+    left: auto;
+  }
+
+  /* Adjust hover effect to maintain vertical centering */
+  .hero-carousel .slider-button:hover {
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  /* Ensure text doesn't overlap dots */
+  .hero-carousel .slideshow__text {
+    padding-bottom: 6rem;
   }
 }
