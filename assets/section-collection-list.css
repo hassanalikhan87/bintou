@@ -73,9 +73,9 @@
   padding: 1rem 2.5rem;
   min-height: 4.5rem;
   min-width: auto;
-  background-color: #f9f2e8 !important; /* Bintou Dark Green */
-  color: #a9723e !important; /* Bintou Ivory */
-  border: 1px solid #f9f2e8 !important;
+  background-color: var(--color-bintou-ivory) !important;
+  color: var(--color-bintou-saffron) !important;
+  border: 1px solid var(--color-bintou-ivory) !important;
   border-radius: 0 !important;
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
@@ -206,18 +206,17 @@
 
 /* Custom Colors */
 .section-collection-list > div {
-  background-color: #a9723e !important; /* Ivory Dust */
+  background-color: var(--color-bintou-saffron) !important;
 }
 
 .section-collection-list .title-wrapper-with-link {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
 }
 
 .section-collection-list .collection-list-title {
-  color: #f9f2e8 !important; /* Saffron */
+  color: var(--color-bintou-ivory) !important;
   margin: 0;
   line-height: 1.1;
   text-transform: uppercase;

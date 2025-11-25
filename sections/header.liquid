@@ -23,8 +23,8 @@
   }
 
   .header--brand {
-    background-color: #f9f2e8;
-    color: #a9723e;
+    background-color: var(--color-bintou-ivory);
+    color: var(--color-bintou-saffron);
   }
 
   .header--brand .header__heading-link,
@@ -34,19 +34,28 @@
   .header--brand .header__icon span,
   .header--brand .header__icon .icon,
   .header--brand .cart-count-bubble {
-    color: #a9723e;
+    color: var(--color-bintou-saffron);
   }
 
   .header--brand .header__menu-item:hover,
   .header--brand .header__menu-item:focus,
   .header--brand .header__icon:hover,
   .header--brand .header__icon:focus-visible {
-    color: #813235;
+    color: var(--color-bintou-plum);
   }
 
   .header--brand .cart-count-bubble {
-    background-color: #813235;
-    color: #f9f2e8;
+    background-color: var(--color-bintou-plum);
+    color: var(--color-bintou-ivory);
+  }
+
+  /* Glassmorphism for Sticky Header */
+  .shopify-section-header-sticky .header-wrapper {
+    background: rgba(249, 242, 232, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(169, 114, 62, 0.1);
+    transition: background 0.3s ease, border-bottom 0.3s ease;
   }
 
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}

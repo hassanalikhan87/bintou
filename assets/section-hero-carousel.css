@@ -471,15 +471,15 @@ slideshow-component:not(.page-width) .slider-buttons {
 
 /* First CTA Custom Color */
 .hero-carousel__button:not(.hero-carousel__button--secondary) {
-  background-color: #035851 !important;
-  color: #f9f2e8 !important;
-  border: 1px solid #035851 !important;
+  background-color: var(--color-bintou-green) !important;
+  color: var(--color-bintou-ivory) !important;
+  border: 1px solid var(--color-bintou-green) !important;
 }
 
 .hero-carousel__button:not(.hero-carousel__button--secondary):hover {
-  background-color: #024640 !important;
-  border-color: #024640 !important;
-  color: #f9f2e8 !important;
+  background-color: var(--color-bintou-green-dark) !important;
+  border-color: var(--color-bintou-green-dark) !important;
+  color: var(--color-bintou-ivory) !important;
 }
 
 .hero-carousel__button:not(.hero-carousel__button--secondary)::after {
@@ -492,9 +492,9 @@ slideshow-component:not(.page-width) .slider-buttons {
 
 /* Secondary CTA Custom Color (Inverse of Primary) */
 .hero-carousel__button--secondary {
-  background-color: #f9f2e8 !important;
-  color: #035851 !important;
-  border: 1px solid #f9f2e8 !important;
+  background-color: var(--color-bintou-ivory) !important;
+  color: var(--color-bintou-green) !important;
+  border: 1px solid var(--color-bintou-ivory) !important;
   --color-button: 249, 242, 232; /* RGB of #f9f2e8 for Dawn's opacity calculations */
   --color-button-text: 3, 88, 81; /* RGB of #035851 */
 }
@@ -502,7 +502,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 .hero-carousel__button--secondary:hover {
   background-color: #ede4d8 !important; /* Slightly darker ivory */
   border-color: #ede4d8 !important;
-  color: #035851 !important;
+  color: var(--color-bintou-green) !important;
 }
 
 .hero-carousel__button--secondary::after,
@@ -581,7 +581,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 .hero-carousel .slider-counter__link--active .dot {
-  background-color: #f9f2e8 !important; /* Solid Ivory Dust for active */
+  background-color: var(--color-bintou-ivory) !important; /* Solid Ivory Dust for active */
   transform: none; /* Reset scale/rotation */
 }
 
