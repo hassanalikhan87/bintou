@@ -209,7 +209,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 .hero-carousel {
   position: relative;
   width: 100%;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   height: calc(100vh - var(--header-height, 0px));
   min-height: calc(100vh - var(--header-height, 0px));
   overflow: hidden;
@@ -516,6 +516,7 @@ slideshow-component:not(.page-width) .slider-buttons {
   position: absolute;
   bottom: 3rem;
   left: 0;
+  right: 0;
   width: 100%;
   padding: 0 5rem;
   display: flex;
@@ -523,6 +524,8 @@ slideshow-component:not(.page-width) .slider-buttons {
   justify-content: flex-start; /* Start with flex-start, use auto margins for spacing */
   z-index: 3;
   border: none;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* Reorder elements: Dots (Left) - Prev (Right) - Next (Right) */
@@ -533,10 +536,12 @@ slideshow-component:not(.page-width) .slider-buttons {
 
 .hero-carousel .slider-button--prev {
   order: 2;
+  justify-content: flex-start;
 }
 
 .hero-carousel .slider-button--next {
   order: 3;
+  justify-content: flex-end;
 }
 
 /* Style Navigation Buttons (Chevrons) */
@@ -548,9 +553,9 @@ slideshow-component:not(.page-width) .slider-buttons {
   height: 4.4rem;
   display: flex; /* Ensure they are displayed */
   align-items: center;
-  justify-content: center;
   cursor: pointer;
   transition: transform 0.2s ease;
+  padding: 0;
 }
 
 .hero-carousel .slider-button .icon {
