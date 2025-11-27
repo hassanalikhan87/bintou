@@ -1293,8 +1293,6 @@ body.template-index .header--brand {
 }
 
 body.template-index .header {
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
   max-width: 100% !important;
 }
 
@@ -3730,6 +3728,12 @@ details-disclosure > details {
   align-items: center;
   width: 100%;
   gap: 2rem;
+}
+
+@media screen and (min-width: 749px) {
+  .header__row--main {
+    padding: 0 50px;
+  }
 }
 
 .header__nav-left {
