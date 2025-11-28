@@ -1,10 +1,11 @@
 .brand-narrative {
   background-color: var(--color-bintou-ivory);
   overflow: hidden;
+  padding: 30px;
 }
 
 .brand-narrative__container {
-  max-width: var(--page-width);
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@
   flex-direction: column;
   gap: 4rem;
   align-items: center;
+  width: 100%;
 }
 
 .brand-narrative__media {
@@ -32,6 +34,7 @@
   height: auto;
   object-fit: cover;
   display: block;
+  position: relative !important;
 }
 
 .brand-narrative__content {
