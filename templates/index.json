@@ -150,34 +150,17 @@
         "padding_bottom": 0
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Old Souls, Modern Hearts",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A celebration of legacy, love, and craftsmanship passed through generations — expressed through intricate, soulful silver jewelry designed for the modern spirit.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+    "brand_narrative": {
+      "type": "brand-narrative",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "heading": "Old Souls, Modern Hearts",
+        "heading_size": "h1",
+        "text": "<p>A celebration of legacy, love, and craftsmanship passed through generations — expressed through intricate, soulful silver jewelry designed for the modern spirit.</p>",
+        "image": "shopify://shop_images/Bintou_-_Brand_Document_29.jpeg",
+        "layout": "image_left",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "color_scheme": "scheme-1"
       }
     },
     "featured_collection": {
@@ -318,7 +301,7 @@
   "order": [
     "hero_carousel",
     "shop_by_collection",
-    "rich_text",
+    "brand_narrative",
     "featured_collection",
     "collage",
     "video",
