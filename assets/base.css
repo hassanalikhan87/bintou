@@ -3730,7 +3730,7 @@ details-disclosure > details {
   gap: 2rem;
 }
 
-@media screen and (min-width: 749px) {
+@media screen and (min-width: 990px) {
   .header__row--main {
     padding: 0 50px;
   }

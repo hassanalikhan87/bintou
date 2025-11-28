@@ -225,6 +225,13 @@
   font-weight: 500;
 }
 
+/* Tablet Adjustments */
+@media screen and (max-width: 991px) {
+  .section-collection-list .collection-list-title {
+    font-size: 5rem !important; /* Match Hero Mobile */
+  }
+}
+
 /* Mobile Adjustments */
 @media screen and (max-width: 749px) {
   .section-collection-list .collection-list-title {
@@ -235,7 +242,7 @@
     padding: 1.5rem 2rem !important;
     font-size: 1.4rem !important;
     min-width: auto !important;
-    width: 100%; /* Full width on mobile like hero buttons often are? Or just smaller? */
+    width: 55ch; /* Full width on mobile like hero buttons often are? Or just smaller? */
   }
 
   .section-collection-list .title-wrapper-with-link {

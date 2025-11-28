@@ -592,7 +592,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 /* Mobile Adjustments for Controls */
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 991px) {
   .hero-carousel .slideshow__controls {
     height: 100%;
     top: 0;

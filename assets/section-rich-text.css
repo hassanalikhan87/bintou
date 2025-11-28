@@ -84,3 +84,36 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+
+/* Bintou Brand Redesign */
+.rich-text.content-container {
+  background-color: var(--color-bintou-ivory);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.rich-text__heading {
+  color: var(--color-bintou-saffron);
+  font-family: var(--font-heading-family);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.rich-text__text {
+  color: var(--color-bintou-black);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 750px) {
+  .rich-text.content-container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .rich-text__text {
+    font-size: 1.8rem;
+  }
+}
