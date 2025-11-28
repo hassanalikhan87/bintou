@@ -2,48 +2,69 @@
 
 <div class="brand-narrative section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="brand-narrative__container page-width">
-    <div class="brand-narrative__grid brand-narrative__grid--{{ section.settings.layout }}">
-      {%- if section.settings.image != blank -%}
-        <div class="brand-narrative__media media media--transparent media--hover-effect">
-          <img
-            srcset="
-              {%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
-              {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
-              {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
-              {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
-              {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
-              {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-              {{ section.settings.image | image_url }} {{ section.settings.image.width }}w
-            "
-            src="{{ section.settings.image | image_url: width: 1500 }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ section.settings.image.alt | escape }}"
-            loading="lazy"
-            width="{{ section.settings.image.width }}"
-            height="{{ section.settings.image.height }}"
-          >
-        </div>
-      {%- endif -%}
-      <div class="brand-narrative__content">
-        {%- if section.settings.heading != blank -%}
-          <h2 class="brand-narrative__heading {{ section.settings.heading_size }}">
-            {{ section.settings.heading }}
-          </h2>
-        {%- endif -%}
-        {%- if section.settings.text != blank -%}
-          <div class="brand-narrative__text rte">
-            {{ section.settings.text }}
-          </div>
-        {%- endif -%}
-        {%- if section.settings.button_label != blank -%}
-          <div class="brand-narrative__button">
-            <a href="{{ section.settings.button_link }}" class="button button--primary">
-              {{ section.settings.button_label }}
-            </a>
-          </div>
-        {%- endif -%}
+    {%- for block in section.blocks -%}
+      <div class="brand-narrative__block brand-narrative__block--{{ block.type }}" {{ block.shopify_attributes }}>
+        {%- case block.type -%}
+          {%- when 'story_section' -%}
+            <div class="brand-narrative__grid brand-narrative__grid--{{ block.settings.layout }}">
+              {%- if block.settings.image != blank -%}
+                <div class="brand-narrative__media media media--transparent media--hover-effect">
+                  <img
+                    srcset="
+                      {%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                      {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                      {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                      {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+                      {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+                      {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                      {{ block.settings.image | image_url }} {{ block.settings.image.width }}w
+                    "
+                    src="{{ block.settings.image | image_url: width: 1500 }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                    alt="{{ block.settings.image.alt | escape }}"
+                    loading="lazy"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                  >
+                </div>
+              {%- endif -%}
+              <div class="brand-narrative__content">
+                {%- if block.settings.heading != blank -%}
+                  <h2 class="brand-narrative__heading {{ block.settings.heading_size }}">
+                    {{ block.settings.heading }}
+                  </h2>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="brand-narrative__text rte">
+                    {{ block.settings.text }}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.button_label != blank -%}
+                  <div class="brand-narrative__button">
+                    <a href="{{ block.settings.button_link }}" class="button button--primary">
+                      {{ block.settings.button_label }}
+                    </a>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+
+          {%- when 'text_block' -%}
+            <div class="brand-narrative__text-block brand-narrative__text-block--{{ block.settings.alignment }}">
+              {%- if block.settings.heading != blank -%}
+                <h2 class="brand-narrative__heading {{ block.settings.heading_size }}">
+                  {{ block.settings.heading }}
+                </h2>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <div class="brand-narrative__text rte">
+                  {{ block.settings.text }}
+                </div>
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
       </div>
-    </div>
+    {%- endfor -%}
   </div>
 </div>
 
@@ -53,73 +74,6 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "default": "Old Souls, Modern Hearts",
-      "label": "Heading"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "Small"
-        },
-        {
-          "value": "h1",
-          "label": "Medium"
-        },
-        {
-          "value": "h0",
-          "label": "Large"
-        },
-        {
-          "value": "hxl",
-          "label": "Extra Large"
-        }
-      ],
-      "default": "h1",
-      "label": "Heading Size"
-    },
-    {
-      "type": "richtext",
-      "id": "text",
-      "default": "<p>A celebration of legacy, love, and craftsmanship passed through generations — expressed through intricate, soulful silver jewelry designed for the modern spirit.</p>",
-      "label": "Text"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button Label"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "options": [
-        {
-          "value": "image_left",
-          "label": "Image Left"
-        },
-        {
-          "value": "image_right",
-          "label": "Image Right"
-        }
-      ],
-      "default": "image_left",
-      "label": "Desktop Layout"
-    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
@@ -147,9 +101,112 @@
       "default": 60
     }
   ],
+  "blocks": [
+    {
+      "type": "story_section",
+      "name": "Story Section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            { "value": "h2", "label": "Small" },
+            { "value": "h1", "label": "Medium" },
+            { "value": "h0", "label": "Large" },
+            { "value": "hxl", "label": "Extra Large" }
+          ],
+          "default": "h1",
+          "label": "Heading Size"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share your brand story here.</p>",
+          "label": "Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "options": [
+            { "value": "image_left", "label": "Image Left" },
+            { "value": "image_right", "label": "Image Right" }
+          ],
+          "default": "image_left",
+          "label": "Desktop Layout"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    },
+    {
+      "type": "text_block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            { "value": "h2", "label": "Small" },
+            { "value": "h1", "label": "Medium" },
+            { "value": "h0", "label": "Large" },
+            { "value": "hxl", "label": "Extra Large" }
+          ],
+          "default": "h1",
+          "label": "Heading Size"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Add additional text here.</p>",
+          "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right", "label": "Right" }
+          ],
+          "default": "center",
+          "label": "Text Alignment"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Brand Narrative"
+      "name": "Brand Narrative",
+      "blocks": [
+        {
+          "type": "story_section"
+        }
+      ]
     }
   ]
 }

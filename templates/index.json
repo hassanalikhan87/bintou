@@ -152,12 +152,43 @@
     },
     "brand_narrative": {
       "type": "brand-narrative",
+      "blocks": {
+        "intro": {
+          "type": "story_section",
+          "settings": {
+            "heading": "Old Souls, Modern Hearts",
+            "heading_size": "h1",
+            "text": "<p>A celebration of legacy, love, and craftsmanship passed through generations — expressed through intricate, soulful silver jewelry designed for the modern spirit.</p>",
+            "image": "shopify://shop_images/Bintou_-_Brand_Document_29.jpeg",
+            "layout": "image_left"
+          }
+        },
+        "origin": {
+          "type": "story_section",
+          "settings": {
+            "heading": "Who We Are",
+            "heading_size": "h2",
+            "text": "<p>Bintou was born from a desire to honor the women who came before us. We are memory keepers, carving stories into silver. Our pieces are not just worn; they are inherited.</p>",
+            "image": "shopify://shop_images/Bintou_-_Brand_Document_10.jpeg",
+            "layout": "image_right"
+          }
+        },
+        "values": {
+          "type": "text_block",
+          "settings": {
+            "heading": "Our Philosophy",
+            "heading_size": "h2",
+            "text": "<p><strong>Crafted with Care:</strong> Meticulous attention to detail.<br><strong>Rooted in Legacy:</strong> Inspired by heritage.<br><strong>Truth in Quality:</strong> A promise of authenticity.</p>",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "intro",
+        "origin",
+        "values"
+      ],
       "settings": {
-        "heading": "Old Souls, Modern Hearts",
-        "heading_size": "h1",
-        "text": "<p>A celebration of legacy, love, and craftsmanship passed through generations — expressed through intricate, soulful silver jewelry designed for the modern spirit.</p>",
-        "image": "shopify://shop_images/Bintou_-_Brand_Document_29.jpeg",
-        "layout": "image_left",
         "padding_top": 80,
         "padding_bottom": 80,
         "color_scheme": "scheme-1"
