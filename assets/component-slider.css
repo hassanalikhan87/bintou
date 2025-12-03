@@ -139,6 +139,8 @@ slider-component.slider-component-full-width {
   }
 
   .slider--desktop {
+    display: flex;
+    gap: 10px;
     position: relative;
     flex-wrap: inherit;
     overflow-x: auto;
@@ -147,14 +149,17 @@ slider-component.slider-component-full-width {
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem;
     scroll-padding-left: var(--desktop-margin-left-first-item);
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
-  .slider--desktop:after {
+  /* .slider--desktop:after {
     content: '';
     width: 0;
     margin-left: calc(-1 * var(--grid-desktop-horizontal-spacing));
-  }
+  } */
 
   .slider.slider--desktop .slider__slide {
     margin-bottom: 0;
@@ -162,18 +167,8 @@ slider-component.slider-component-full-width {
     padding-bottom: max(var(--focus-outline-padding), var(--shadow-padding-bottom));
   }
 
-  .slider--desktop .slider__slide:first-child {
-    margin-left: var(--desktop-margin-left-first-item);
-    scroll-margin-left: var(--desktop-margin-left-first-item);
-  }
-
   .slider-component-full-width .slider--desktop {
     scroll-padding-left: 1.5rem;
-  }
-
-  .slider-component-full-width .slider--desktop .slider__slide:first-child {
-    margin-left: 1.5rem;
-    scroll-margin-left: 1.5rem;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
