@@ -149,9 +149,6 @@ slider-component.slider-component-full-width {
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem;
     scroll-padding-left: var(--desktop-margin-left-first-item);
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 50px;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
@@ -217,6 +214,7 @@ slider-component.slider-component-full-width {
   scrollbar-color: rgb(var(--color-foreground)) rgba(var(--color-foreground), 0.04);
   -ms-overflow-style: none;
   scrollbar-width: none;
+  list-style: none;
 }
 
 .slider::-webkit-scrollbar {
