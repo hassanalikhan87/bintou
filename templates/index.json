@@ -159,16 +159,22 @@
             "heading": "Old Souls, Modern Hearts",
             "heading_size": "h1",
             "text": "<p>A celebration of legacy, love, and craftsmanship passed through generations — expressed through intricate, soulful silver jewelry designed for the modern spirit.</p>",
-            "layout": "image_left"
+            "image": "shopify://shop_images/gold-chain-5933.jpg",
+            "layout": "image_left",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "origin": {
           "type": "story_section",
           "settings": {
             "heading": "Who We Are",
-            "heading_size": "h2",
+            "heading_size": "h1",
             "text": "<p>Bintou was born from a desire to honor the women who came before us. We are memory keepers, carving stories into silver. Our pieces are not just worn; they are inherited.</p>",
-            "layout": "image_right"
+            "image": "shopify://shop_images/DALL_E2025-01-0602.20.50-ApairofintricatelydesignedVictorian-eraearrings.Theyarecraftedingoldwithdetailedfiligreepatterns_adornedwithpearlsandsmallgemston_50038095-cd7e-46b7-bd03-c66a19c06a22.webp",
+            "layout": "image_right",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "values": {
@@ -187,9 +193,9 @@
         "values"
       ],
       "settings": {
+        "color_scheme": "scheme-1",
         "padding_top": 80,
-        "padding_bottom": 80,
-        "color_scheme": "scheme-1"
+        "padding_bottom": 80
       }
     },
     "featured_collection": {
@@ -203,7 +209,7 @@
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 4,
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
@@ -215,7 +221,7 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 28,
         "padding_bottom": 36
       }
@@ -226,20 +232,20 @@
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "earings"
           }
         },
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "sample-product",
             "second_image": false
           }
         },
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "earings"
           }
         }
       },
@@ -261,6 +267,7 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -309,6 +316,7 @@
         "column2",
         "column3"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
