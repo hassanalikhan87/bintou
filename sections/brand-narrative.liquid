@@ -1,7 +1,7 @@
 {{ 'section-brand-narrative.css' | asset_url | stylesheet_tag }}
 
 <div class="brand-narrative section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
-  <div class="brand-narrative__container page-width">
+  <div class="brand-narrative__container">
     {%- for block in section.blocks -%}
       <div class="brand-narrative__block brand-narrative__block--{{ block.type }}" {{ block.shopify_attributes }}>
         {%- case block.type -%}

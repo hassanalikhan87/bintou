@@ -157,9 +157,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .featured-collection-wrapper {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 50px;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .featured-collection-title {
@@ -1073,7 +1072,7 @@ summary::-webkit-details-marker {
   }
 
   .grid--peek.slider .grid__item:first-of-type {
-    margin-left: 1.5rem;
+    margin-left: 0;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */

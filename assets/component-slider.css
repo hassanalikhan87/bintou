@@ -99,8 +99,6 @@ slider-component.slider-component-full-width {
   .slider--tablet:after {
     content: '';
     width: 0;
-    padding-left: 1.5rem;
-    margin-left: calc(-1 * var(--grid-desktop-horizontal-spacing));
   }
 
   .slider.slider--tablet .slider__slide {
@@ -149,6 +147,9 @@ slider-component.slider-component-full-width {
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem;
     scroll-padding-left: var(--desktop-margin-left-first-item);
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
