@@ -68,7 +68,11 @@
   class="color-{{ section.settings.color_scheme }} isolate gradient featured-collection-wrapper"
 >
   <div
-    class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
+    {% comment %} class="slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in" {% endcomment %}
+    {% comment %} class="collection-list-wrapper page-width isolate page-width-desktop no-mobile-link section-template--20842915299549__shop_by_collection-padding" {% endcomment %}
+    class="collection-list-wrapper page-width isolate page-width-desktop {% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding"
+
+    {% comment %} class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}" {% endcomment %}
     id="collection-{{ section.id }}"
     data-id="{{ section.id }}"
   >
